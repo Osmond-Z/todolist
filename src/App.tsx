@@ -38,7 +38,8 @@ export default function App() {
     localStorage.setItem("todos", json);
   }, [state.todos]);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     const newTodo: Todo = {
       id: new Date().getTime(),
       text: state.todo,
