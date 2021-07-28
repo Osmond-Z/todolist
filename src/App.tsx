@@ -44,9 +44,7 @@ export default function App() {
       text: state.todo,
       completed: false,
     };
-
     setState({ ...state, todos: [...state.todos, newTodo], todo: "" });
-    console.log(state);
   };
 
   const deleteTodo = (id: number) => {
