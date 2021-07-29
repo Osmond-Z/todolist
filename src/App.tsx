@@ -21,7 +21,7 @@ const initialState: TodoState = {
   todoEditing: 0,
   editingText: "",
 };
-export default function App() {
+const App = () => {
   const [state, setState] = useState<TodoState>(initialState);
 
   useEffect(() => {
@@ -132,4 +132,6 @@ export default function App() {
       ))}
     </div>
   );
-}
+};
+export default App;
+
