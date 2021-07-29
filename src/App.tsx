@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./App.less";
 import { Form, Input, Button, Checkbox, Typography } from "antd";
 
 interface Todo {
@@ -80,7 +80,9 @@ const App = () => {
 
   return (
     <div id="todo-list">
-      <Typography.Title>Todo List</Typography.Title>
+      <Typography.Title style={{ color: "#1CAD5E" }}>
+        Todo List
+      </Typography.Title>
       <form onSubmit={handleSubmit}>
         <Form.Item>
           <Input
@@ -134,4 +136,3 @@ const App = () => {
   );
 };
 export default App;
-
