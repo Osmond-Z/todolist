@@ -80,9 +80,7 @@ const App = () => {
 
   return (
     <div id="todo-list">
-      <Typography.Title style={{ color: "#1CAD5E" }}>
-        Todo List
-      </Typography.Title>
+      <Typography.Title>Todo List</Typography.Title>
       <form onSubmit={handleSubmit}>
         <Form.Item>
           <Input
