@@ -73,9 +73,7 @@ const App = () => {
       return todo;
     });
 
-    setState({ ...state, todos: updatedTodos });
-
-    setState({ ...state, todoEditing: 0 });
+    setState({ ...state, todos: updatedTodos, todoEditing: 0 });
   };
 
   return (
@@ -100,7 +98,7 @@ const App = () => {
               id="completed"
               checked={todo.completed}
               onChange={() => toggleComplete(todo.id)}
-              style={{ marginRight: 5 }}
+              style={{ marginRight: "5px" }}
             />
             {todo.id === state.todoEditing ? (
               <Input
