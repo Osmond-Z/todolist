@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.less";
+import "./App.css";
 import { Form, Input, Button, Checkbox, Typography } from "antd";
 
 interface Todo {
